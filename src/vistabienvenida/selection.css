@@ -1,0 +1,55 @@
+/* Estilos para el contenedor del componente Selection */
+.selection-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1; /* Permite que el contenedor crezca para llenar el espacio disponible */
+  background-color: #ffffff; /* Fondo blanco */
+  text-align: center;
+  font-family: 'Lexend'; /* Tipo de letra */
+}
+
+/* Estilos para los botones */
+.selection-button {
+  padding: 15px 30px; /* Aumenta el espacio interno para mejorar la usabilidad */
+  font-size: 18px; /* Tamaño de fuente aumentado */
+  cursor: pointer;
+  margin: 10px;
+  background-color: #F28D23; /* Nuevo color de fondo para los botones */
+  color: white; /* Letras blancas */
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: moveButton 2s infinite alternate; /* Agrega una animación de movimiento continuo */
+}
+
+/* Define la animación de movimiento */
+@keyframes moveButton {
+  0% {
+    transform: translateY(0); /* Posición inicial del botón */
+  }
+  100% {
+    transform: translateY(10px); /* Posición final del botón */
+  }
+}
+
+.footer {
+  background-color: #4DABE1;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: auto;
+  font-family: Arial, sans-serif;
+  width: 100%; /* Asegura que el footer ocupe el ancho completo */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .selection-button {
+    font-size: 16px; /* Reduce el tamaño de fuente en pantallas más pequeñas */
+    padding: 12px 24px; /* Ajusta el espacio interno */
+  }
+}
+
+

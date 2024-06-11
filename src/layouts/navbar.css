@@ -1,0 +1,71 @@
+/* Cambiar el color del botón de colapso */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28242, 141, 35, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navBg .navbar-nav .nav-link {
+  color: black !important; /* Color del texto en negro */
+  font-size: 20px !important; /* Tamaño de la letra */
+  font-family: 'Lexend';
+}
+
+.nav-item-img {
+  width: 95px;
+  height: 85px;
+}
+
+.nav-item-custom {
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+}
+
+.floating-menu {
+  position: fixed;
+  top: 73px;
+  right: 0px;
+  background-color: #4DABE1;
+  box-shadow: 0px 0px 10px #ff6f0008;
+  padding: 0;
+  z-index: 1000;
+  font-family: 'Lexend';
+  height: 25%;
+  width: 328px;
+  border: 2px solid white;
+}
+
+.floating-menu .nav-link {
+  color: white !important;
+  font-size: 20px !important;
+  font-family: 'Lexend';
+  display: block;
+  width: 100%;
+  padding: 10px; /* Asegurar que el texto no se sobreponga con el borde */
+  text-align: center; /* Centrar el texto dentro del enlace */
+  border-top: 2px solid white; /* Añadir borde blanco en la parte superior de cada enlace */
+  border-bottom: 2px solid white; /* Añadir borde blanco en la parte inferior de cada enlace */
+}
+
+.floating-menu .nav-link:first-child {
+  border-top: none; /* Eliminar el borde superior del primer enlace */
+}
+
+.floating-menu .nav-link:last-child {
+  border-bottom: none; /* Eliminar el borde inferior del último enlace */
+}
+
+.floating-menu .nav-link:hover,
+.floating-menu .nav-link.active {
+  background-color: #4DABE1 !important;
+}
+
+.close-button {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: white;
+}

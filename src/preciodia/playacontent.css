@@ -1,0 +1,179 @@
+/* Contenedor para el dropdown de especie y su etiqueta */
+.species-container {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    font-family: 'Lexend';
+  }
+  
+  /* Estilo para la etiqueta de especie */
+  .label {
+    margin-right: 10px; /* Espacio entre la etiqueta y el dropdown */
+    font-size: 14px;
+  }
+  .data-label {
+    margin-right: 10px; /* Espacio entre la etiqueta y el dropdown */
+    font-size: 14px;
+  }
+  
+  .dropdown-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .dropdown-container select {
+    width: 78%;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-top: 12px;
+    font-family: 'Lexend';
+  }
+  
+  .dropdown-container select:focus {
+    outline: none;
+    border-color: #4DABE1; /* Cambiar el color del borde cuando el select está enfocado */
+  }
+  
+  .dropdown-container option {
+    padding: 10px;
+  }
+  
+  /* Estilo para la flecha de selección en Firefox */
+  select {
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
+  
+  /* Estilo para la flecha de selección en otros navegadores */
+  select::-ms-expand {
+    display: none;
+  }
+  
+  /* Estilo para la flecha de selección en Chrome, Safari y Edge */
+  select {
+    appearance: none;
+  }
+  
+  /* Cambiar el color de la flecha de selección */
+  select {
+    background-image:
+      linear-gradient(45deg, transparent 50%, #F28D23 50%),
+      linear-gradient(135deg, #F28D23 50%, transparent 50%);
+    background-position:
+      calc(100% - 20px) calc(1em + 2px),
+      calc(100% - 15px) calc(1em + 2px);
+    background-size:
+      5px 5px,
+      5px 5px;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc; /* Estilo del borde */
+    padding: 8px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+  }
+  
+  /* Estilos para la Fecha */
+  .date-dropdown {
+    flex: 1; /* Permitir que el datepicker tome el espacio disponible */
+  }
+  
+  .data {
+    width: 85%;
+    padding: 4px;
+    font-size: 14px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-top: 4px;
+    font-family: 'Lexend';
+    margin-right: 18px;
+  }
+  
+  .data:focus {
+    outline: none;
+    border-color: #4DABE1; /* Cambiar el color del borde cuando el select está enfocado */
+  }
+  
+  /* Contenedor para fecha y botón de búsqueda */
+  .date-button-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  /* Estilos para el botón */
+  .search-button {
+    background-color: #F28D23;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    flex-shrink: 0;
+    margin-right: 9px;
+  }
+  .lupa-icon {
+    width: 20px; /* Ajusta el tamaño según sea necesario */
+    height: 20px; /* Ajusta el tamaño según sea necesario */
+    /* Agrega otros estilos según sea necesario */
+  }
+  .chart-container {
+    color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 8px;
+    margin: 56px auto;
+    max-width: 800px;
+    height: 291px;
+  }
+  .source{
+    color: #000000;
+    margin-right: 0px;;
+  }
+  
+  /* Estilos adicionales para hacer que el gráfico sea responsive */
+  .chart-container canvas {
+    width: 97% !important;
+    height: 104% !important;
+  }
+  .chart-container canvas.chartjs-render-monitor {
+    font-size: 12px; /* Ajustar el tamaño de la fuente según sea necesario */
+  }
+  
+  /* Media query para ajustar el diseño en dispositivos móviles */
+  @media (max-width: 768px) {
+    .dropdown-container {
+      flex-direction: column; /* Cambiar la dirección del flex a columna en móviles */
+    }
+  
+    .date-dropdown {
+      width: 100%; /* Asegurar que el dropdown de fecha ocupe el 100% del ancho en móviles */
+      margin-top: 0; /* Eliminar margen superior */
+    }
+  
+    .search-button {
+      padding: 7px 30px;
+      margin-left: -8px;
+    }
+  
+    .species-container {
+      flex-direction: column; /* Cambiar la dirección del flex a columna en móviles */
+    }
+  
+    .label {
+      margin-bottom: 4px; /* Espacio entre la etiqueta y el dropdown en móviles */
+    }
+    .chart-container {
+      height: 311px;
+      margin-top: 31px;
+    }
+  
+    /* Reducir el tamaño de las letras del eje X */
+    .chart-container canvas.chartjs-render-monitor {
+      font-size: 8px; /* Ajustar el tamaño de la fuente según sea necesario */
+    }
+  }
+    
+  
+  

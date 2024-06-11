@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.precio-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+}
+
+.precio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  text-align: center;
+  font-family: 'Lexend';
+  flex: 1;
+}
+
+.texto-titulo {
+  background-color: #4DABE1;
+  color: white;
+  padding: 10px 105px;
+  text-align: center;
+  font-family: 'Lexend';
+  margin: 0px 0 10px 0;
+  font-size: 20px;
+  width: 100%;
+}
+
+.tab-container {
+  display: flex;
+  justify-content: center;
+}
+
+.tab-button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  padding: 5px 23px;
+  margin: 0 28px;
+  cursor: pointer;
+  position: relative;
+  font-family: 'Lexend';
+  font-size: 18px;
+} 
+
+.tab-button.active {
+  color: #F28D23;
+}
+
+.tab-button.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  margin-left: -26%;
+  margin-right: -26%;
+  height: 4px;
+  background-color: #F28D23;
+}
+
+.linea-horizontal {
+  width: 100%;
+  height: 1px;
+  background-color:  #4DABE1;
+  margin-top: 5px; 
+} 

@@ -1,0 +1,16 @@
+.header {
+    width: 200px; /* Ancho del encabezado */
+    height: 50px; /* Altura del encabezado */
+    position: fixed; /* Fija el encabezado en la ventana del navegador */
+    top: 10px; /* Distancia desde la parte superior */
+    left: 10px; /* Distancia desde la izquierda */
+    z-index: 999; /* Asegura que el encabezado esté por encima de otros elementos */
+  }
+  
+  .logo {
+    width: 183%;
+    height: 658%;
+    margin-top: -46%;
+    margin-left: -36%;
+  }
+  

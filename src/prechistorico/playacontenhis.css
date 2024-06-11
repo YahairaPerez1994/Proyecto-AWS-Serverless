@@ -1,0 +1,42 @@
+/* Otros estilos existentes */
+
+/* Estilos específicos para el periodo en PlayaContenHis */
+.period-dropdown-container {
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.period-dropdown-container select {
+    width: 55%;
+    padding: 4px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-family: 'Lexend';
+    font-size: 14px;
+    margin-right: 14px;
+    margin-top: 0px;
+}
+
+.his-button {
+    background-color: #F28D23;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 15px; /* Ajusta el padding según sea necesario */
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.labelp{
+    margin-right: 10px; /* Espacio entre la etiqueta y el dropdown */
+    font-size: 14px;
+
+}
+
+@media (max-width: 768px) {
+    .his-button {
+        padding: 7px 27px;
+        margin-left: 0; /* Ajusta el margen en pantallas pequeñas si es necesario */
+    }
+}
