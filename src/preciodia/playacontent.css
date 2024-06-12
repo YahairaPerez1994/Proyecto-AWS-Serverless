@@ -101,7 +101,7 @@
   .date-button-container {
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 14px;
   }
   
   /* Estilos para el botón */
@@ -111,8 +111,11 @@
     border: none;
     border-radius: 5px;
     flex-shrink: 0;
-    margin-right: 9px;
-  }
+    margin-right: 53px;
+    width: 22%;
+    margin-left: 189px;
+    height: 35px;
+}
   .lupa-icon {
     width: 20px; /* Ajusta el tamaño según sea necesario */
     height: 20px; /* Ajusta el tamaño según sea necesario */

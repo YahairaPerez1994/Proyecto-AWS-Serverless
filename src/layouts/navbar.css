@@ -24,7 +24,7 @@
   position: fixed;
   top: 73px;
   right: 0px;
-  background-color: #4DABE1;
+  background-color:#0A2B40;
   box-shadow: 0px 0px 10px #ff6f0008;
   padding: 0;
   z-index: 1000;
@@ -56,7 +56,7 @@
 
 .floating-menu .nav-link:hover,
 .floating-menu .nav-link.active {
-  background-color: #4DABE1 !important;
+  background-color:#0A2B40 !important;
 }
 
 .close-button {

@@ -22,17 +22,10 @@ const PrecioPorDia = () => {
           >
             Playa
           </button>
-          <button
-            className={`tab-button ${selectedTab === 'mayorista' && 'active'}`}
-            onClick={() => setSelectedTab('mayorista')}
-          >
-            Mayorista
-          </button>
         </div>
         <div className="linea-horizontal"></div>
         <div className="content">
           {selectedTab === 'playa' && <PlayaContent />} {/* Renderizamos PlayaContent si la pestaña seleccionada es "Playa" */}
-          {selectedTab === 'mayorista' && <MayoristaContent />}
         </div>
       </div>
       <footer className="footer">
@@ -40,10 +33,6 @@ const PrecioPorDia = () => {
       </footer>
     </div>
   );
-};
-
-const MayoristaContent = () => {
-  return <div>Contenido para Mayorista</div>;
 };
 
 export default PrecioPorDia;

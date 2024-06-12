@@ -1,7 +1,3 @@
-/* Estilo para el fondo de la página Home */
-.home-background {
-  background-color: #BBD8F2;
-}
 
 /* Estilos para el contenedor del componente Inicio */
 .inicio-container {
@@ -16,8 +12,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 55%;
-  height: auto;
+  width: 100%;
+  height: 100%;
   transform: translate(-50%, -50%);
   z-index: -1;
 }
@@ -27,13 +23,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 119%;
-  height: 134%;
+  width: 103%;
+  height: 117%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #FF8F00;
+  color: #F27F3D;
 }
 
 /* Estilos para el texto "Bienvenidos" */

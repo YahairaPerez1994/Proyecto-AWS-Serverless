@@ -9,13 +9,13 @@
 }
 
 .period-dropdown-container select {
-    width: 55%;
+    width: 30%;
     padding: 4px;
     border: 1px solid #000000;
     border-radius: 5px;
     font-family: 'Lexend';
     font-size: 14px;
-    margin-right: 14px;
+    margin-right: 16px;
     margin-top: 0px;
 }
 
@@ -24,9 +24,12 @@
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 7px 15px; /* Ajusta el padding según sea necesario */
+    padding: 7px 15px;
     cursor: pointer;
     flex-shrink: 0;
+    margin-left: 138px;
+    margin-right: 55px;
+    width: 22%;
 }
 .labelp{
     margin-right: 10px; /* Espacio entre la etiqueta y el dropdown */

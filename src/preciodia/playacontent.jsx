@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css'; // Importar estilos de react-datepicker
 import './playacontent.css';
-import lupa from '../img/lupa.png';
 import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS } from 'chart.js/auto'; // Asegurarse de importar ChartJS para evitar errores
 
@@ -452,8 +451,7 @@ const barChartData = apiData
             className="data"
           />
         </div>
-        <button className="search-button" onClick={handleSearch}>
-          <img src={lupa} alt="Buscar" className="lupa-icon" />
+        <button className="search-button" onClick={handleSearch}>Buscar
         </button>
       </div>
       {apiData && (

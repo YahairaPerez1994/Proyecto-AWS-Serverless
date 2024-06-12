@@ -4,12 +4,7 @@ import './preciohistorico.css';
 import PlayaContenHis from './playacontenhis';
 
 const PrecioHistorico = () => {
-  const navigate = useNavigate();
   const [selectedTab, setSelectedTab] = useState('playa');
-
-  const handleEnter = () => {
-    navigate('/selection');
-  };
 
   return (
     <div className="historico-page">
@@ -22,17 +17,10 @@ const PrecioHistorico = () => {
           >
             Playa
           </button>
-          <button
-            className={`tab-button ${selectedTab === 'mayorista' && 'active'}`}
-            onClick={() => setSelectedTab('mayorista')}
-          >
-            Mayorista
-          </button>
         </div>
         <div className="linea-horizontal"></div>
         <div className="content">
           {selectedTab === 'playa' && <PlayaContenHis />} {/* Renderizamos PlayaContent si la pestaña seleccionada es "Playa" */}
-          {selectedTab === 'mayorista' && <MayoristaContent />}
         </div>
       </div>
       <footer className="footer">
@@ -42,8 +30,6 @@ const PrecioHistorico = () => {
   );
 };
 
-const MayoristaContent = () => {
-  return <div>Contenido para Mayorista</div>;
-};
+
 
 export default PrecioHistorico;

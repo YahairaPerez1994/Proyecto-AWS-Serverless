@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../preciodia/playacontent.css';
-import lupa from '../img/lupa.png';
 import './playacontenhis.css';
 import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS } from 'chart.js/auto'; // Asegurarse de importar ChartJS para evitar errores
@@ -480,8 +479,7 @@ const generateRandom = () => {
                         <option value="3 meses">3 meses</option>
                         <option value="6 meses">6 meses</option>
                     </select>
-                    <button className="his-button" onClick={handleSearch}>
-                        <img src={lupa} alt="Buscar" className="lupa-icon" />
+                    <button className="his-button" onClick={handleSearch}>Buscar
                     </button>
                 </div>
                 {apiData && (
