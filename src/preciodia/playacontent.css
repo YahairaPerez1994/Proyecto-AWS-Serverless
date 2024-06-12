@@ -125,14 +125,18 @@
     color: white;
     border-radius: 5px;
     border: 1px solid black;
-    padding: 8px;
+    padding: 17px;
     margin: 56px auto;
-    max-width: 800px;
-    height: 291px;
+    max-width: 802px;
+    height: 355px;
+    margin-top: 15px;
   }
   .source{
     color: #000000;
-    margin-right: 0px;;
+    margin-right: -18px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 12px;
   }
   
   /* Estilos adicionales para hacer que el gráfico sea responsive */

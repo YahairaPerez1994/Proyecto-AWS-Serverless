@@ -32,7 +32,7 @@ const NavigationBar = () => {
       <Navbar className="navBg" expand="lg">
         <Container>
           <Navbar.Brand onClick={handleLogoClick} style={{ cursor: 'pointer' }}>
-            {/* <img src={logo} alt="Logo de SNP" className="nav-item-img" style={{ width: "40px", height: "100px" }} /> */}
+            {/* <img src={logo} alt="Logo de SNP" className="nav-item-img" style={{ width: "183%", height: "658%" }} /> */}
           </Navbar.Brand>
           <div className="custom-toggler" onClick={toggleMenu}>
             <span className="navbar-toggler-icon"></span>

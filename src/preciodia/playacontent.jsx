@@ -372,7 +372,7 @@ const handleSearch = async () => {
 
   try {
     const response = await fetch(
-      `https://46s14d7xm0.execute-api.us-east-1.amazonaws.com/preprod/infomar/precioPorProcedencia?nombre_comun=${selectedSpecies}&fecha=${selectedDate.toISOString().split('T')[0]}`
+      `https://exc0p2rie1.execute-api.us-east-1.amazonaws.com/projetc/infomar/precioPorProcedencia?nombre_comun=${selectedSpecies}&fecha=${selectedDate.toISOString().split('T')[0]}`
     );
 
     if (!response.ok) {
@@ -399,10 +399,8 @@ const barChartData = apiData
           label: 'Precio en playa (Soles/kg)',
           data: Object.values(apiData.Data),
           backgroundColor: [
-            '#FFAE6A', // Color de la primera barra
-            '#FF8243', // Color de la segunda barra
-            '#E26A2C', // Color de la tercera barra
-            '#C65314', // Color de la cuarta barra
+            '#176FA6', // Color de la primera barra
+            
             // Continúa añadiendo más colores si hay más datos
           ],
           
