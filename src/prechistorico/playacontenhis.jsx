@@ -391,8 +391,7 @@ const handleSearch = async () => {
         return;
     }
 
-    const apiUrl = `https://46s14d7xm0.execute-api.us-east-1.amazonaws.com/preprod/infomar/precioPorSpan?nombre_comun=${encodeURIComponent(selectedSpecies)}&puerto=${encodeURIComponent(selectedPort)}&span=${encodeURIComponent(selectedPeriod)}`;
-
+    const apiUrl = `https://6nxdr0sgi3.execute-api.us-east-1.amazonaws.com/historico/infomar/precioPorProcedencia/precioPorHistorico?nombre_comun=${encodeURIComponent(selectedSpecies)}&puerto=${encodeURIComponent(selectedPort)}&span=${encodeURIComponent(selectedPeriod)}`;
     try {
         const response = await fetch(apiUrl);
 
@@ -421,12 +420,8 @@ const generateRandom = () => {
             label: 'Precio en playa (Soles/kg)',
             data: Object.values(apiData.Data),
             backgroundColor: [
-              '#FFAE6A', // Color de la primera barra
-              '#FF8243', // Color de la segunda barra
-              '#E26A2C', // Color de la tercera barra
-              '#C65314', // Color de la cuarta barra
-              // Continúa añadiendo más colores si hay más datos
-            ],
+                '#176FA6', // Color de la primera barra
+              ],
             
           },
         ],
@@ -473,7 +468,7 @@ const generateRandom = () => {
                     <label className='labelp' htmlFor="periodDropdown">Periodo:</label>
                     <select id="periodDropdown" value={selectedPeriod} onChange={handlePeriodChange}>
                         <option value="" disabled>Seleccionar</option>
-                        <option value="7 días">7 dias</option>
+                        <option value="7 dias">7 días</option>
                         <option value="1 mes">1 mes</option>
                         <option value="2 meses">2 meses</option>
                         <option value="3 meses">3 meses</option>
